@@ -1688,7 +1688,7 @@ function applyLogos(){
   const l = document.getElementById('loginLogoImg'); if(l) l.src = LOGO_FULL_URI;
 }
 applyLogos();
-if (typeof updateDemoUsageBadge === 'function') { updateDemoUsageBadge(); }
+setTimeout(function(){ if (typeof updateDemoUsageBadge === 'function') { updateDemoUsageBadge(); } }, 0);
 
 function load(key){ try { return JSON.parse(localStorage.getItem(key)) || []; } catch(e){ return []; } }
 // ==================== DEMO MODE — 100 TOTAL ENTRY CAP ====================
