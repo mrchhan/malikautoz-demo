@@ -550,7 +550,7 @@
       <div class="grid2">
         <div><label>Supplier / Company Name</label><input id="supName" placeholder="e.g. Al-Noor Auto Traders"></div>
         <div><label>Contact Person</label><input id="supContact" placeholder="Contact person name"></div>
-        <div><label>Phone</label><input id="supPhone" placeholder="Phone number"></div>
+        <div><label>Phone</label><input id="supPhone" type="tel" inputmode="tel" placeholder="Phone number" oninput="this.value=this.value.replace(/[^0-9+\-\s()]/g,'')"></div>
         <div><label>WhatsApp</label><input id="supWhatsapp" placeholder="WhatsApp number"></div>
         <div><label>Email</label><input id="supEmail" placeholder="Email address"></div>
         <div><label>Address</label><input id="supAddress" placeholder="Shop / warehouse address"></div>
@@ -871,7 +871,7 @@
       <input type="hidden" id="cEditId">
       <div class="grid2">
         <div><label>Name</label><input id="cName" placeholder="Customer name"></div>
-        <div><label>Phone</label><input id="cPhone" placeholder="Phone number"></div>
+        <div><label>Phone</label><input id="cPhone" type="tel" inputmode="tel" placeholder="Phone number" oninput="this.value=this.value.replace(/[^0-9+\-\s()]/g,'')"></div>
         <div><label>WhatsApp Number (optional)</label><input id="cWhatsapp" placeholder="Leave blank to use Phone"></div>
         <div><label>Bike Model (optional)</label><input id="cBike" placeholder="e.g. Honda CG125"></div>
         <div>
@@ -909,7 +909,7 @@
       <input type="hidden" id="empEditId">
       <div class="grid2">
         <div><label>Full Name</label><input id="empName" placeholder="e.g. Farrukh Ahmed"></div>
-        <div><label>Phone</label><input id="empPhone" placeholder="Phone number"></div>
+        <div><label>Phone</label><input id="empPhone" type="tel" inputmode="tel" placeholder="Phone number" oninput="this.value=this.value.replace(/[^0-9+\-\s()]/g,'')"></div>
         <div><label>Position</label>
           <select id="empPosition">
             <option>Cashier</option><option>Mechanic</option><option>Manager</option><option>Helper</option><option>Other</option>
